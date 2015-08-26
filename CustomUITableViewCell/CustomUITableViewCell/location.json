@@ -1,0 +1,39 @@
+{
+    "location" : [
+                  {
+                  "title": "Chennai",
+                  "desc": "Chennai /ˈtʃɛnaɪ/ (also known as Madras Listeni/məˈdraːs/) is the capital city of the Indian state of Tamil Nadu. Located on the Coromandel Coast off the Bay of Bengal, it is the biggest industrial and commercial centre in South India, and a major cultural, economic and educational centre. Chennai is known as the Detroit of India for its automobile industry. It is the third-largest city and third-most populous metropolitan area in the country and 36th-largest urban area in the world.",
+                  "image":"chennai.jpg",
+                  },
+                  {
+                  "title": "Delhi",
+                  "desc": "Delhi (/ˈdɛli/, Hindustani pronunciation: [d̪ɪlliː] Dilli), officially the National Capital Territory of Delhi, is the Capital territory of India.[4] It has a population of about 11 million and a metropolitan population of about 16.3 million, making it the second most populous city and second most populous urban agglomeration in India.[2][5] Such is the nature of urban expansion in Delhi that its growth has expanded beyond the NCT to incorporate towns in neighbouring states and at its largest extent can count a population of about 25 million residents as of 2014.",
+                  "image":"delhi.jpg",
+                  },
+                  {
+                  "title": "Kolkata",
+                  "desc": "Kolkata /koʊlˈkɑːtɑː/, formerly Calcutta /kælˈkʌtə/, is the capital of the Indian state of West Bengal. Located on the east bank of the Hooghly river, it is the principal commercial, cultural, and educational centre of East India, while the Port of Kolkata is India's oldest operating port and its sole major riverine port. As of 2011, the city had 4.5 million residents; the urban agglomeration, which comprises the city and its suburbs, was home to approximately 14.1 million, making it the fourth-most populous metropolitan area in India. As of 2008, its gross domestic product (adjusted for purchasing power parity) was estimated to be US$104 billion, which would be fourth highest among Indian cities, behind Mumbai, Delhi and Chennai.[12] As a growing metropolitan city in a developing country, Kolkata confronts substantial urban pollution, traffic congestion, poverty, overpopulation, and other logistic and socioeconomic problems.",
+                  "image":"kolkata.jpg",
+                  },
+                  {
+                  "title": "Bangalore",
+                  "desc": "Bangalore /bæŋɡəˈlɔːr/, officially known as Bengaluru[7] ([ˈbeŋɡəɭuːɾu] ( listen)), is the capital of the Indian state of Karnataka. It has a population of about 8.42 million and a metropolitan population of about 8.52 million, making it the fourth most populous city and fifth most populous urban agglomeration in India.[4] Located in southern India on the Deccan Plateau, at a height of over 900 m (3,000 ft) above sea level, Bangalore is known for its pleasant climate throughout the year. Its elevation is the highest among the major large cities of India.",
+                  "image":"bangalore.jpg",
+                  },
+                  {
+                  "title": "Madurai",
+                  "desc": "hello",
+                  "image":"chennai.jpg",
+                  },
+                  {
+                  "title": "Ranchi",
+                  "desc": "Ranchi /ˈrɑːntʃi/ Listen is the capital of the Indian state of Jharkhand, and its third most populous city. Ranchi was the centre of the Jharkhand movement,[3] which called for a separate state for the tribal regions of South Bihar, northern Orissa, western West Bengal & the eastern area of what is present-day Chhattisgarh. The Jharkhand state was formed on 15 November 2000 by carving out the Bihar divisions of Chota Nagpur and Santhal Parganas..",
+                  "image":"ranchi.jpg",
+                  },
+                  {
+                  "title": "Batlagundu",
+                  "desc": "Batlagundu [pronounced 'Vathalakkundu'] ((Tamil: வத்தலக்குண்டு)) is a panchayat town in Dindigul district in the state of Tamil Nadu, India. The town is about an hour and a half from Kodaikanal. Vetrilaikunru was the original name and it got changed to vathalagundu.",
+                  "image":"batlagundu.jpg",
+                  }
+            ]
+}
