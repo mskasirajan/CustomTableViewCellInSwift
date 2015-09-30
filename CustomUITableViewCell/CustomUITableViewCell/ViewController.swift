@@ -68,6 +68,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return (200 - 15 + boudingSize.height)
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let indexPath = NSIndexPath(forRow: 4, inSection: 0)
+        tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Top, animated: true)
+    }
+    
     // MARK: Private Method Implementations
     
     func readjson(fileName: String) -> NSData{
