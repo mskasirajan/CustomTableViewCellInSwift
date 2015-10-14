@@ -20,6 +20,8 @@
 		1B4D1FBA1B8C91E600E5A764 /* kolkata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B4D1FB71B8C91E600E5A764 /* kolkata.jpg */; };
 		1B4D1FBD1B8CB08E00E5A764 /* batlagundu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B4D1FBC1B8CB08E00E5A764 /* batlagundu.jpg */; };
 		1B4D1FBF1B8CB14400E5A764 /* ranchi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B4D1FBE1B8CB14400E5A764 /* ranchi.jpg */; };
+		1B551CA71BC25B94003E6BD7 /* ContainerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B551CA61BC25B94003E6BD7 /* ContainerCollectionView.swift */; settings = {ASSET_TAGS = (); }; };
+		1B551CA91BC265C9003E6BD7 /* CVCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B551CA81BC265C9003E6BD7 /* CVCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1B4D1FB71B8C91E600E5A764 /* kolkata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kolkata.jpg; sourceTree = "<group>"; };
 		1B4D1FBC1B8CB08E00E5A764 /* batlagundu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batlagundu.jpg; sourceTree = "<group>"; };
 		1B4D1FBE1B8CB14400E5A764 /* ranchi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ranchi.jpg; sourceTree = "<group>"; };
+		1B551CA61BC25B94003E6BD7 /* ContainerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerCollectionView.swift; sourceTree = "<group>"; };
+		1B551CA81BC265C9003E6BD7 /* CVCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +75,11 @@
 			isa = PBXGroup;
 			children = (
 				1B4D1F8A1B8C39C900E5A764 /* AppDelegate.swift */,
-				1B4D1F8C1B8C39C900E5A764 /* ViewController.swift */,
-				1B4D1F9C1B8C3E3600E5A764 /* TVCustomCell.swift */,
-				1B4D1FB41B8C8EA200E5A764 /* Views */,
 				1B4D1FB31B8C8E8E00E5A764 /* Supporting Files */,
+				1B551CAA1BC2B5E8003E6BD7 /* Models */,
+				1B4D1FB41B8C8EA200E5A764 /* Views */,
+				1B551CAC1BC2B60E003E6BD7 /* Controller */,
+				1B551CAB1BC2B5FA003E6BD7 /* Helper */,
 			);
 			path = CustomUITableViewCell;
 			sourceTree = "<group>";
@@ -112,6 +117,31 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		1B551CAA1BC2B5E8003E6BD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B4D1F9C1B8C3E3600E5A764 /* TVCustomCell.swift */,
+				1B551CA81BC265C9003E6BD7 /* CVCustomCell.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1B551CAB1BC2B5FA003E6BD7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1B551CA61BC25B94003E6BD7 /* ContainerCollectionView.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		1B551CAC1BC2B60E003E6BD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B4D1F8C1B8C39C900E5A764 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +168,7 @@
 		1B4D1F7F1B8C39C900E5A764 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = kasi;
 				TargetAttributes = {
@@ -191,6 +222,8 @@
 			files = (
 				1B4D1F9D1B8C3E3600E5A764 /* TVCustomCell.swift in Sources */,
 				1B4D1F8D1B8C39C900E5A764 /* ViewController.swift in Sources */,
+				1B551CA91BC265C9003E6BD7 /* CVCustomCell.swift in Sources */,
+				1B551CA71BC25B94003E6BD7 /* ContainerCollectionView.swift in Sources */,
 				1B4D1F8B1B8C39C900E5A764 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

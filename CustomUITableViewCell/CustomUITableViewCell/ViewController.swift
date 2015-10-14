@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+struct Constants {
+    static let embedSegue = "FilterEmbedSegue"
+}
 
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ChildViewControllerDelegate {
+
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     var jsonDict: NSDictionary = NSDictionary ()
@@ -31,6 +36,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        // invoke ContainerCollectionView viewWillAppear for reload data
+        let tv : UICollectionViewController = self.childViewControllers[0] as! UICollectionViewController
+        tv.viewWillAppear(true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -68,20 +81,34 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return (200 - 15 + boudingSize.height)
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let indexPath = NSIndexPath(forRow: 4, inSection: 0)
-        tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Top, animated: true)
+    @IBAction func searchBarButtonAction(sender: AnyObject) {
+        containerView.hidden = false
     }
     
     // MARK: Private Method Implementations
     
-    func readjson(fileName: String) -> NSData{
+    private func readjson(fileName: String) -> NSData{
         
         let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json")
         let jsonData = NSData(contentsOfMappedFile: path!)
         
         return jsonData!
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == Constants.embedSegue {
+            let childViewController = segue.destinationViewController as! ContainerCollectionView
+            childViewController.delegate = self
+        }
+    }
+
+    // MARK: ContainerCollectionView delegate
+        
+    func moveToIndex(index: Int) {
+        self.containerView.hidden = true
+        let indexPath = NSIndexPath(forRow: index, inSection: 0)
+        tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Top, animated: true)
     }
 }
 
